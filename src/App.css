@@ -1,0 +1,47 @@
+
+/* Genel Stiller */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Canlı Renkler */
+:root {
+  --primary-light: #0DCAF0; /* Canlı Mavi */
+  --secondary-light: #FFC107; /* Canlı Sarı */
+  --primary-dark: #6F42C1; /* Canlı Mor */
+  --secondary-dark: #FD7E14; /* Canlı Turuncu */
+}
+
+[data-bs-theme="light"] {
+  --bs-primary: var(--primary-light);
+  --bs-secondary: var(--secondary-light);
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: var(--primary-dark);
+  --bs-secondary: var(--secondary-dark);
+  --bs-body-bg: #121212;
+  --bs-body-color: #ffffff;
+  --bs-tertiary-bg: #212529;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: var(--bs-tertiary-bg) !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(45deg, var(--bs-primary), var(--bs-secondary));
+  padding: 100px 0;
+}
+
+/* Kartlar */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
